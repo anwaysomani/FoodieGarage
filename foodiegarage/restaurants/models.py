@@ -4,7 +4,7 @@ from django.db import models
 class restaurant(models.Model):
     restaurant_id = models.IntegerField(unique=True, primary_key=True)
     restaurant_name = models.CharField(max_length=200)
-    cuisines = models.TextField()
+    cuisines = models.TextField(blank=True, null=True)
     average_cost_for_two = models.IntegerField()
     currency = models.CharField(max_length=120)
     has_table_booking = models.BooleanField()

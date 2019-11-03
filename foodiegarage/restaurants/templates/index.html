@@ -11,7 +11,16 @@
 	<h1>FoodieGarage</h1>
 
 <article>
-  <section>
+
+	{% for restaurant in restaurants %}
+		<section>
+			<p>{{restaurant.restaurant_id}}</p>
+			<p>{{restaurant.restaurant_name}}</p>
+			<p>{{restaurant.average_cost_for_two}}</p>
+		</section>
+	{% endfor %}
+
+  <!-- <section>
     <p><b>Restaurant Name as some text</b>
     <span>Pune, Maharashtra</span>
     ######</p>
@@ -59,7 +68,7 @@
   
   <section>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolorem maxime minima animi cum.</p>
-  </section>
+  </section> -->
   
 </article>
 </body>
