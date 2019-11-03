@@ -7,18 +7,26 @@ article {
  -webkit-column-width: 13em;
  -moz-column-gap: 1em;
  -webkit-column-gap: 1em;   
+ text-align: center;
 }
 
 section {
  display: inline-block;
- margin:  0.25rem;
- padding:  1rem;
+ margin:  20px;
+ padding:  2px;
  width:  100%; 
- background:  #efefef;
+ background:  #fff;
+ border-top-right-radius: 20px;
+ text-align: center;
+ background-color: #fff;
+ color: #000;
 }
 
 p {
- margin:  1rem 0; 
+ margin: 2px;
+ text-align: left;
+ background-color: #fff;
+ color: #000;
 }
 
 /*  styles for background color, etc; not necessary for this thing to work  */
@@ -36,6 +44,24 @@ body {
   line-height:  1.25;
 }
 
-p {
- text-align:  left;
+h2 {
+	width: 100%;
+	font-size: 12px;
+	font-style: bold;
+	
+}
+
+.to_left {
+	position: relative;
+	text-align: left;
+}
+
+.to_right {
+	position: relative;
+	text-align: right;
+}
+
+.white {
+	background-color: #fff;
+	color: #C0CBCA;
 }

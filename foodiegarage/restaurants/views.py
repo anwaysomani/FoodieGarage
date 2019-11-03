@@ -3,7 +3,7 @@ from django.shortcuts import render
 from .models import restaurant
 
 def main(request):
-    restos = restaurant.objects.all()
+    restos = restaurant.objects.all().order_by('-aggregate_rating')
     context = {
         'restaurants': restos,
     }
